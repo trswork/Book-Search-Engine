@@ -1,20 +1,37 @@
 {
-    "name": "graphql-client",
+    "name": "graphql-activities",
     "version": "1.0.0",
     "description": "",
     "main": "server/server.js",
+    "engines": {
+        "node": "14.x"
+    },
     "scripts": {
-      "start": "node server/server.js",
-      "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-      "install": "cd server && npm i && cd ../client && npm i",
-      "seed": "cd server && npm run seed",
-      "build": "cd client && npm run build"
+        "start": "node server/server.js",
+        "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "seed": "cd server && npm run seed",
+        "build": "cd client && npm run build"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "dependencies": {
+        "@heroku/buildpack-registry": "^1.0.1",
+        "apollo-server-express": "^2.15.0",
+        "async-file": "^2.0.2",
+        "bcrypt": "^5.0.0",
+        "cli-ux": "^6.0.6",
+        "express": "^4.17.2",
+        "got": "^12.0.0",
+        "graphql": "^15.8.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongo": "^0.1.0",
+        "mongoose": "^5.13.14",
+        "phoenix": "^1.6.5"
+    },
     "devDependencies": {
-      "concurrently": "^5.1.0"
+        "concurrently": "^5.1.0",
+        "nodemon": "^2.0.3"
     }
-  }
-  
+}
