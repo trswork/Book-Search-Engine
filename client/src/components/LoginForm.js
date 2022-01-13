@@ -31,7 +31,7 @@ const LoginForm = () => {
     }
 
     try {
-      await loginUser(userFormData);
+      const response = await loginUser(userFormData);
 
       // if (!response.ok) {
       //   throw new Error('something went wrong!');
